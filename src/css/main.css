@@ -36,6 +36,10 @@ body {
     align-self: flex-end;
 }
 
+.menu-item {
+    cursor: url(images/mickey.png), pointer;
+}
+
 #body-container {
     align-items: center;
     justify-content: center;
