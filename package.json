@@ -4,9 +4,12 @@
   "description": "Hayden Carey's personal website",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development && open index.html",
+    "dev": "webpack-dev-server --config ./webpack.config.js --mode development && open index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint"
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p",
+    "lint": "eslint",
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "Anna Carey",
