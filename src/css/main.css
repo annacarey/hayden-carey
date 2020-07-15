@@ -8,6 +8,11 @@ body {
     width: 100vw;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 #main-container {
     height: calc(100vh - 70px) ;
     width: 100vw;
@@ -21,15 +26,28 @@ body {
     justify-content: center;
 }
 
-#section {
-
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #portfolio {
     z-index: -1;
 }
+
+#bio {
+    margin-left: 10px;
+}
+
 #name {
     z-index: -1;
+    height: calc(100vh - 70px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 10vmin;
     text-align: center;
     opacity: 0.1;
@@ -43,10 +61,6 @@ body {
     padding-bottom: 10px;
     justify-content: space-evenly;
     align-self: flex-end;
-}
-
-.menu-item {
-    cursor: url(images/mickey.png), pointer;
 }
 
 #body-container {
